@@ -1,13 +1,106 @@
-body.home-page {
+body {
     margin: 0;
     min-height: 100vh;
-    background-image: url("placeholder.jpg");
+    background-image: url("https://images.photowall.com/products/60759/new-york-skyline-5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    text-decoration: underline;
+}
+
+/* Page content */
 .intro {
     padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.results {
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.result-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* About Us page */
+.about-us-page h1,
+.about-us-page #about-us-content,
+.about-us-page h2,
+.about-us-page #team-members {
+    text-align: center;
+}
+
+/* Contact Us page */
+.contact-us-page h1,
+.contact-us-page #contact-us-content {
     text-align: center;
 }
